@@ -10,12 +10,18 @@
   
   /* Estilizando o indicador de rolagem (thumb) */
   ::-webkit-scrollbar-thumb {
-    background: #888; /* Cor do indicador de rolagem */
+    background: #3d35ba; /* Cor do indicador de rolagem */
     border-radius: 6px; /* Arredondamento do indicador de rolagem */
   }
   
   /* Estilizando o indicador de rolagem (thumb) quando o mouse está sobre ele */
   ::-webkit-scrollbar-thumb:hover {
     background: #555; /* Cor do indicador de rolagem quando o mouse está sobre ele */
+  }
+  
+
+  .icon {
+    width: 50px; /* Defina o tamanho desejado para os ícones */
+    height: 50px; /* Defina o tamanho desejado para os ícones */
   }
   
