@@ -5,7 +5,7 @@
   
   /* Estilizando a trilha da barra de rolagem */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Cor de fundo da trilha */
+    background: #6bb8ff; /* Cor de fundo da trilha */
   }
   
   /* Estilizando o indicador de rolagem (thumb) */
@@ -16,7 +16,7 @@
   
   /* Estilizando o indicador de rolagem (thumb) quando o mouse está sobre ele */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Cor do indicador de rolagem quando o mouse está sobre ele */
+    background: #3d35ba; /* Cor do indicador de rolagem quando o mouse está sobre ele */
   }
   
 
