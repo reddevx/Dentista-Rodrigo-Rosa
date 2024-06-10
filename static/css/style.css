@@ -1,32 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+* {
   font-family: "Montserrat", sans-serif;
 }
-/* Estilizando a barra de rolagem */
-::-webkit-scrollbar {
-    width: 12px; /* Largura da barra de rolagem */
-  }
-  
-  /* Estilizando a trilha da barra de rolagem */
-  ::-webkit-scrollbar-track {
-    background: #6bb8ff; /* Cor de fundo da trilha */
-  }
-  
-  /* Estilizando o indicador de rolagem (thumb) */
-  ::-webkit-scrollbar-thumb {
-    background: #3d35ba; /* Cor do indicador de rolagem */
-    border-radius: 6px; /* Arredondamento do indicador de rolagem */
-  }
-  
-  /* Estilizando o indicador de rolagem (thumb) quando o mouse está sobre ele */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #3d35ba; /* Cor do indicador de rolagem quando o mouse está sobre ele */
-  }
-  
 
-  .icon {
-    width: 50px; /* Defina o tamanho desejado para os ícones */
-    height: 50px; /* Defina o tamanho desejado para os ícones */
-  }
-  
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 6px; 
+}
+
+.icon {
+  width: 50px;
+  height: 50px; 
+}
