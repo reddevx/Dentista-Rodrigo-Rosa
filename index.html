@@ -5,223 +5,189 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rodrigo Rosa</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/css/style.css">
-  </head>
-<style>
-  /* Estilos básicos para o efeito de máquina digitando */
-
-  .typing-animation {
-    padding-top: 100px;
-    border-right: .2em solid rgb(255, 255, 255);
-    /* Efeito do cursor */
-    overflow: hidden;
-    /* Esconde o texto além da largura do contêiner */
-    animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
-    /* Animação */
-  }
-
-  @keyframes typing {
-    from {
-      width: 0
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <style>
+    /* Estilos básicos para o efeito de máquina de escrever */
+    .typing-animation {
+      padding-top: 100px;
+      border-right: .2em solid white;
+      overflow: hidden;
+      animation: typing 3s steps(20, end), blink-caret .75s step-end infinite;
     }
 
-    to {
-      width: 50%
-    }
-  }
-
-  @keyframes blink-caret {
-
-    from,
-    to {
-      border-color: transparent
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 50%;
+      }
     }
 
-    50% {
-      border-color: rgb(255, 255, 255)
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: white;
+      }
     }
-  }
 
-  #animacao {
-    padding-top: 150px;
-    font-size: 70px;
-  }
-</style>
+    #animacao {
+      padding-top: 150px;
+      font-size: 70px;
+    }
+  </style>
+</head>
 
-<body>
-  <div class="bg-primary">
-    <h6 class="text-light text-center">
-      Atendimento de Segunda a Sexta</h6>
+<body class="bg-gray-100">
+  <div class="bg-blue-600 py-2">
+    <h6 class="text-white text-center">Atendimento de Segunda a Sexta</h6>
   </div>
-  <main class="container p-1">
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <button class="btn btn-outline-primary" type="submit">Contatar</button>
-          </form>
+  <main class="container mx-auto p-4">
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <a class="text-blue-600 font-bold text-lg" href="#">Navbar</a>
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-700 hover:bg-gray-200 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="#" class="text-gray-700 hover:bg-gray-200 hover:text-black px-3 py-2 rounded-md text-sm font-medium">Link</a>
+                <div class="relative group">
+                  <button class="text-gray-700 hover:bg-gray-200 hover:text-black px-3 py-2 rounded-md text-sm font-medium">
+                    Dropdown
+                  </button>
+                  <div class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5 group-hover:block">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Action</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Another action</a>
+                    <div class="border-t border-gray-100"></div>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Something else here</a>
+                  </div>
+                </div>
+                <a href="#" class="text-gray-400 cursor-not-allowed px-3 py-2 rounded-md text-sm font-medium">Disabled</a>
+              </div>
+            </div>
+          </div>
+          <div class="hidden sm:block">
+            <form class="flex items-center">
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700" type="submit">Contatar</button>
+            </form>
+          </div>
         </div>
       </div>
     </nav>
-<br><br><br>
-    <div class="container p-2">
-      <div class="row">
-        <!-- Coluna para o conteúdo -->
-        <div class="col-md-8 order-last order-md-first">
-          <h1 class="text-dark" id="animacao"></h1>
-          <p class="h5 text-primary">Dentista</p>
-        </div>
-        <!-- Coluna para a imagem -->
-        <div class="col-md-4 p-1 order-first order-md-last">
-          <img width="350px" height="350px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaK9IKuSPxH0uCd6Ia4XdTLC4Gk0vW0VphQPfXpk0ld8xdRa92RBB9-Bbqtm_BdEVg9eM&usqp=CAU" alt="Imagem" >
-        </div>
+
+    <div class="mt-16 flex flex-col md:flex-row items-center bg-white shadow-md rounded-lg p-6">
+      <div class="md:order-last mb-4 md:mb-0 md:ml-4">
+        <img class="rounded-lg" width="350" height="350" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaK9IKuSPxH0uCd6Ia4XdTLC4Gk0vW0VphQPfXpk0ld8xdRa92RBB9-Bbqtm_BdEVg9eM&usqp=CAU" alt="Imagem">
+      </div>
+      <div class="md:order-first text-center md:text-left">
+        <h1 class="text-black" id="animacao"></h1>
+        <p class="text-xl text-blue-600">Dentista</p>
       </div>
     </div>
 
-<br><br><br>
-
-<section class="container p-5" id="serviços">
-      
-  <h1 class="text-primary">Sobre mim</h1>
-
-  <div class="card text-center mb-3">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="imagem.jpg" class="img-fluid rounded-start" alt="...">
+    <section class="mt-16">
+      <h1 class="text-blue-600 text-center text-2xl font-bold">Sobre mim</h1>
+      <div class="bg-white shadow-md rounded-lg mt-4 p-6">
+        <h3 class="text-lg font-semibold text-gray-900">Card title</h3>
+        <p class="mt-4 text-gray-700">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <small class="text-gray-500">Last updated 3 mins ago</small>
       </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-  
-  <section class="container p-4" id="serviços">
-      <h1 class="text-primary">Serviços</h1>
-      <div class="card-group border-0">
-        <div class="card border-0 text-center">
-          <center>
-          <img src="/exam.png" class="card-img-top icon text-center" alt="...">
-        </center>
-          <div class="card-body">
-            <h5 class="card-title">Exames clinicos</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-          </div>
-        </div>
-        
-        <div class="card border-0 text-center">
-          <center>
-          <img src="/tooth.png" class="card-img-top icon text-center" alt="...">
-          </center>
-          <div class="card-body">
-            <h5 class="card-title">Tratamento de raspagem e limpeza</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-          </div>
-        </div>
-        <div class="card border-0 text-center">
-          <center>
-          <img src="/hydrotherapy.png" class="card-img-top icon" alt="...">
-          </center>
-          <div class="card-body">
-            <h5 class="card-title">Restauracoes em resina composta</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-          </div>
-        </div>
-      </div>
-      <center>
-      <a class="text-center" href="servicos.html">Ver Mais</a>
-    </center> 
     </section>
 
-<section class="container">
-<h1 class="text-primary">Meios de Contato</h1>
-<ul class="list-group list-group-flush">
-  <li class="list-group-item">Telefone: 13 3434-19334</li>
-  <li class="list-group-item">Email: dasdad@gmail.com</li>
-</ul>
-</section>
+    <section class="mt-16">
+      <h1 class="text-blue-600 text-center text-2xl font-bold">Serviços</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <div class="flex justify-center mt-4">
+            <img src="/exam.png" class="h-20 w-20" alt="Exames clínicos">
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mt-4">Exames clínicos</h3>
+          <p class="mt-1 text-gray-600">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
 
-    <section class="container p-3" id="footer">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <div class="flex justify-center mt-4">
+            <img src="/tooth.png" class="h-20 w-20" alt="Tratamento de raspagem e limpeza">
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mt-4">Tratamento de raspagem e limpeza</h3>
+          <p class="mt-1 text-gray-600">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
 
-      <footer class="bg-gray text-black py-4 p-5" style=" box-shadow: 10px 20px 7px rgba(0, 0, 0, 0.2);">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h4>Informações de Contato</h4>
-    
-              <p>Email: exemplo@email.com</p>
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <div class="flex justify-center mt-4">
+            <img src="/hydrotherapy.png" class="h-20 w-20" alt="Restaurações em resina composta">
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mt-4">Restaurações em resina composta</h3>
+          <p class="mt-1 text-gray-600">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+      </div>
+      <div class="flex justify-center mt-4">
+        <a class="text-blue-600 hover:underline" href="servicos.html">Ver Mais</a>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <h1 class="text-blue-600 text-center text-2xl font-bold">Meios de Contato</h1>
+      <ul class="list-disc pl-5 mt-4 text-gray-700">
+        <li>Telefone: 13 3434-19334</li>
+        <li>Email: dasdad@gmail.com</li>
+      </ul>
+    </section>
+
+    <section class="mt-16">
+      <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-xl font-semibold">Informações de Contato</h4>
+              <p class="mt-4">Email: exemplo@email.com</p>
               <p>Telefone: (123) 456-7890</p>
             </div>
-            <div class="col-md-4">
-              <h4>Links Rápidos</h4>
-              <ul class="list-unstyled">
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="#quemsomos">Sobre Nós</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
+            <div>
+              <h4 class="text-xl font-semibold">Links Rápidos</h4>
+              <ul class="mt-4">
+                <li><a href="index.html" class="text-gray-400 hover:text-white">Página Inicial</a></li>
+                <li><a href="#quemsomos" class="text-gray-400 hover:text-white">Sobre Nós</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Serviços</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Contato</a></li>
               </ul>
             </div>
-            <div class="col-md-4">
-              <h4>Redes Sociais</h4>
-              <a href="https://www.instagram.com/devsync.tech/" class="btn btn-outline-primary btn-social ">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a href="#" class="btn btn-outline-primary btn-social">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a href="#" class="btn btn-outline-primary btn-social">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-    
+            <div>
+              <h4 class="text-xl font-semibold">Redes Sociais</h4>
+              <div class="flex space-x-4 mt-4">
+                <a href="https://www.instagram.com/devsync.tech/" class="text-gray-400 hover:text-white">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </footer>
-     </section>
+    </section>
   </main>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
   <script>
     const text = "Rodrigo Rosa";
     const typingElement = document.getElementById("animacao");
@@ -239,10 +205,6 @@
 
     typeText();
   </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
