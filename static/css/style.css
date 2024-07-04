@@ -23,11 +23,10 @@
 }
 
 .fade-in {
-  opacity: 0; /* Começa com opacidade 0 */
-  transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-/* Estilo para aplicar a opacidade 1 ao elemento quando visível */
 .fade-in.active {
   opacity: 1;
 }

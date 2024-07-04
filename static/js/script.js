@@ -1,8 +1,18 @@
-const fadeIns = document.querySelectorAll('.fade-in');
+document.addEventListener('DOMContentLoaded', function () {
+  const fadeIns = document.querySelectorAll('.fade-in');
 
-// Para cada elemento, adiciona uma classe 'active' após um pequeno atraso
-fadeIns.forEach((element, index) => {
-  setTimeout(() => {
-    element.classList.add('active');
-  }, index * 200); // Atraso de 200ms para cada elemento
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.5 // threshold de 50%
+  });
+
+  fadeIns.forEach(fadeIn => {
+    observer.observe(fadeIn);
+  });
 });
