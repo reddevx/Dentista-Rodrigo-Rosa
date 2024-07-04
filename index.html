@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <link rel="stylesheet" href="/static/css/style.css">
   <script src="/static/js/script.js"></script>
-<style>
+  <style>
     /* Estilos básicos para o efeito de máquina de escrever */
     .typing-animation {
       padding-top: 100px;
@@ -49,7 +49,7 @@
       background-color: #121212 !important;
     }
   </style>
-  
+
 </head>
 
 <body class="bg-gray-100">
@@ -58,8 +58,7 @@
   </div>
 
   <main class=" mx-auto">
-    <nav
-      class="dark dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600">
+    <nav class="dark dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <span class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white">Rodrigo
@@ -130,40 +129,46 @@
         </div>
       </div>
     </section>
-    
-    <div class="container mx-auto px-4 py-8">
-      <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="md:flex items-center">
-          <div class="md:flex-shrink-0 relative">
-            <img class="h-96 w-full object-cover md:h-full md:w-96 rounded-l-xl fade-in"
-              src="/static/img/image.png" alt="Foto do dentista">
-            <div class="image-overlay bg-black bg-opacity-50 text-white text-center absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <div class="flex h-full justify-center items-center">
-                <div>
-                  <p class="text-lg font-semibold">Dr. João Silva</p>
-                  <p class="text-sm">Cirurgião Dentista</p>
+
+    <section id="about-me">
+      <div class="container mx-auto px-4 py-8">
+        <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="md:flex items-center">
+            <div class="md:flex-shrink-0 relative">
+              <img class="h-96 w-full object-cover md:h-full md:w-96 rounded-l-xl fade-in" src="/static/img/image.png"
+                alt="Foto do dentista">
+              <div
+                class="image-overlay bg-black bg-opacity-50 text-white text-center absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="flex h-full justify-center items-center">
+                  <div>
+                    <p class="text-lg font-semibold">Dr. João Silva</p>
+                    <p class="text-sm">Cirurgião Dentista</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Sobre Mim</div>
-            <h2 class="block mt-1 text-2xl leading-tight font-medium text-black fade-in">Dr. Rodrigo Rosa</h2>
-            <p class="mt-2 text-gray-600 fade-in">Sou um dentista apaixonado por proporcionar sorrisos saudáveis e bonitos aos
-              meus pacientes. Com mais de 10 anos de experiência, tenho dedicado minha carreira ao cuidado odontológico
-              de qualidade, utilizando tecnologias avançadas e tratamentos personalizados.</p>
-            <p class="mt-4 text-gray-600 fade-in">Meu objetivo é oferecer um atendimento humanizado e eficaz, buscando sempre as
-              melhores soluções para a saúde bucal de cada paciente, promovendo sua autoestima e bem-estar.</p>
-            <div class="mt-6 fade-in">
-              <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full">Marque
-                uma consulta</a>
+            <div class="p-8">
+              <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Sobre Mim</div>
+              <h2 class="block mt-1 text-2xl leading-tight font-medium text-black fade-in">Dr. Rodrigo Rosa</h2>
+              <p class="mt-2 text-gray-600 fade-in">Sou um dentista apaixonado por proporcionar sorrisos saudáveis e
+                bonitos aos
+                meus pacientes. Com mais de 10 anos de experiência, tenho dedicado minha carreira ao cuidado
+                odontológico
+                de qualidade, utilizando tecnologias avançadas e tratamentos personalizados.</p>
+              <p class="mt-4 text-gray-600 fade-in">Meu objetivo é oferecer um atendimento humanizado e eficaz, buscando
+                sempre as
+                melhores soluções para a saúde bucal de cada paciente, promovendo sua autoestima e bem-estar.</p>
+              <div class="mt-6 fade-in">
+                <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full">Marque
+                  uma consulta</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <section class="mt-16 p-5" id="services">
+    <section class="mt-16 p-5 fade-in" id="services">
       <h1 class="text-blue-600 text-center text-2xl font-bold">Serviços</h1>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
         <div class="bg-white shadow-md rounded-lg p-6">
@@ -197,55 +202,67 @@
         <a class="text-blue-600 hover:underline" href="servicos.html">Ver Mais</a>
       </div>
     </section>
- 
+
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="gallery">
       <div class="grid gap-4">
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
-          </div>
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
-          </div>
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-          </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+        </div>
       </div>
       <div class="grid gap-4">
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-          </div>
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-          </div>
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-          </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+        </div>
       </div>
       <div class="grid gap-4">
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-          </div>
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-          </div>
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-          </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+        </div>
       </div>
       <div class="grid gap-4">
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-          </div>
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-          </div>
-          <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-          </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+        </div>
+        <div>
+          <img class="h-auto max-w-full rounded-lg fade-in"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+        </div>
       </div>
-  </div>
-  
-    <section class="mt-16 dark" id="footer">
+    </div>
+
+    <section class="mt-16 dark fade-in" id="footer">
       <footer class="bg-black text-white py-8">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
@@ -257,8 +274,10 @@
             <div>
               <h4 class="text-xl font-semibold">Links Rápidos</h4>
               <ul class="mt-4 space-y-2">
-                <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300">Página Inicial</a></li>
-                <li><a href="#quemsomos" class="text-gray-400 hover:text-white transition-colors duration-300">Sobre Nós</a></li>
+                <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300">Página
+                    Inicial</a></li>
+                <li><a href="#quemsomos" class="text-gray-400 hover:text-white transition-colors duration-300">Sobre
+                    Nós</a></li>
                 <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Serviços</a></li>
                 <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contato</a></li>
               </ul>
@@ -266,7 +285,8 @@
             <div>
               <h4 class="text-xl font-semibold p-2">Redes Sociais</h4>
               <div class="flex space-x-4 mt-4">
-                <a href="https://www.instagram.com/devsync.tech/" class="text-gray-400 hover:text-white transition-colors duration-300">
+                <a href="https://www.instagram.com/devsync.tech/"
+                  class="text-gray-400 hover:text-white transition-colors duration-300">
                   <i class="bi bi-instagram p-2 text-2xl"></i>
                 </a>
                 <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
@@ -284,19 +304,19 @@
 
     <section>
       <button type="button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-      class="fixed bottom-6 right-6 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md">
-      <i class="bi bi-chevron-double-up"></i>
-    </button>
-    
-    <div>
-      <a href="https://api.whatsapp.com/send?phone=5513997777837" target="_blank" rel="noopener noreferrer"
-        class="whatsapp-button">
-        <i class="bi bi-whatsapp"></i>
-      </a>
-    </div>
+        class="fixed bottom-6 right-6 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md">
+        <i class="bi bi-chevron-double-up"></i>
+      </button>
+
+      <div>
+        <a href="https://api.whatsapp.com/send?phone=5513997777837" target="_blank" rel="noopener noreferrer"
+          class="whatsapp-button">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
     </section>
-    
-</main>
+
+  </main>
 
   <script>
     const text = "Rodrigo Rosa";
