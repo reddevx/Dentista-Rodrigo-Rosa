@@ -22,5 +22,29 @@
   height: 50px; 
 }
 
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* Posição ajustada para o canto inferior esquerdo */
+  background-color: #25D366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp-button svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
 
 
