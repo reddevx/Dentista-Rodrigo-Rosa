@@ -130,36 +130,37 @@
       </div>
     </section>
 
-    <section id="about-me">
-      <div class="container mx-auto px-4 py-8">
+    <section id="about-me" class="py-16 bg-gray-100 mt-3">
+      <div class="container mx-auto px-4">
         <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
           <div class="md:flex items-center">
-            <div class="md:flex-shrink-0 relative">
-              <img class="h-96 w-full object-cover md:h-full md:w-96 rounded-l-xl fade-in" src="/static/img/image.png"
-                alt="Foto do dentista">
+            <div class="md:flex-shrink-0 relative group">
+              <img class="h-96 w-full object-cover fade-in md:h-full md:w-96 rounded-l-xl transition duration-300 transform group-hover:scale-105"
+                src="/static/img/image.png" alt="Foto do dentista">
               <div
-                class="image-overlay bg-black bg-opacity-50 text-white text-center absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                class="image-overlay bg-black bg-opacity-50 text-white text-center absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div class="flex h-full justify-center items-center">
                   <div>
-                    <p class="text-lg font-semibold">Dr. João Silva</p>
-                    <p class="text-sm">Cirurgião Dentista</p>
+                    <p class="text-lg font-semibold fade-in">Dr. João Silva</p>
+                    <p class="text-sm fade-in">Cirurgião Dentista</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="p-8">
+            <div class="p-8 fade-in">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Sobre Mim</div>
-              <h2 class="block mt-1 text-2xl leading-tight font-medium text-black fade-in">Dr. Rodrigo Rosa</h2>
-              <p class="mt-2 text-gray-600 fade-in">Sou um dentista apaixonado por proporcionar sorrisos saudáveis e
+              <h2 class="block mt-1 text-2xl leading-tight font-medium text-black">Dr. Rodrigo Rosa</h2>
+              <p class="mt-2 text-gray-600">Sou um dentista apaixonado por proporcionar sorrisos saudáveis e
                 bonitos aos
                 meus pacientes. Com mais de 10 anos de experiência, tenho dedicado minha carreira ao cuidado
                 odontológico
                 de qualidade, utilizando tecnologias avançadas e tratamentos personalizados.</p>
-              <p class="mt-4 text-gray-600 fade-in">Meu objetivo é oferecer um atendimento humanizado e eficaz, buscando
+              <p class="mt-4 text-gray-600">Meu objetivo é oferecer um atendimento humanizado e eficaz, buscando
                 sempre as
                 melhores soluções para a saúde bucal de cada paciente, promovendo sua autoestima e bem-estar.</p>
-              <div class="mt-6 fade-in">
-                <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full">Marque
+              <div class="mt-6">
+                <a href="#"
+                  class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full inline-block transition duration-300 ease-in-out">Marque
                   uma consulta</a>
               </div>
             </div>
@@ -167,6 +168,7 @@
         </div>
       </div>
     </section>
+    
 
     <section class="mt-16 p-5 fade-in" id="services">
       <h1 class="text-blue-600 text-center text-2xl font-bold">Serviços</h1>
@@ -308,7 +310,7 @@
         <i class="bi bi-chevron-double-up"></i>
       </button>
 
-      <div>
+      <div class="">
         <a href="https://api.whatsapp.com/send?phone=5513997777837" target="_blank" rel="noopener noreferrer"
           class="whatsapp-button">
           <i class="bi bi-whatsapp"></i>
